@@ -7,8 +7,8 @@
 * 🏠**Adress:** Uruchcha st. Minsk, Belarus
 * ☎️**Phone:** +375 33 385 58 57
 * 📧**Email:** yauhenranko@gmail.com
-* **Telegram:** YauhenRanko
-[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/yauhen-ranko-63a7801a3/)
+* **Telegram:** YauhenRanko  
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/yauhen-ranko-63a7801a3/)  
 [![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/YauhenRanko)
 
 ---
