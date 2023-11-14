@@ -1,39 +1,42 @@
-rsschool-cv
+# rsschool-cv
+---
+# Yauhen Ranko
+---
+## My contact info
 
-Yauhen Ranko
+* 🏠**Adress:** Uruchcha st. Minsk, Belarus
+* ☎️**Phone:** +375 33 385 58 57
+* 📧**Email:** yauhenranko@gmail.com
+* **LinkedIn:** https://www.linkedin.com/in/yauhen-ranko-63a7801a3/
+* **GitHub:** YauhenRanko
+* **Telegram:** YauhenRanko
 
-My contact info
-
-Adress: Uruchcha st. Minsk, Belarus
-Phone: +375 33 385 58 57
-Email: yauhenranko@gmail.com
-LinkedIn: https://www.linkedin.com/in/yauhen-ranko-63a7801a3/
-GitHub: YauhenRanko
-Telegram: YauhenRanko
-
-Summary
+---
+## Summary
 
 Currently I work as a Financial Services Product Manager. My main goal is to learn how to create modern and user-friendly interfaces and, of course, learn how to do it correctly. I have a good understanding of business requirements and can convey these requirements to the development team. I like to understand problems in detail and solve them.
 
-Hard Skills:
+---
+## Hard Skills:
 1. Web programming in Python (Flask, FastAPI frameworks) - Basic knowledge
 2. Working with relational and non-relational databases (PostgreSQL, SQLite, MongoDB)
 3. Data Analytics (Excel, NumPy, Pandas, Matplotlib, BI)
 4. UX/UI - Miro, Figma
-
-
-Soft Skills:
+ 
+---
+## Soft Skills:
 1. Work with a team - hiring, adaptation of employees, work with burnout and employee resource, optimization of tasks
 2. Leadership - team motivation and overall commitment to the mission
 3. Communication with external and internal customers
 4. Work in multitasking mode
 
-Code example
+---
+## Code example 🐍
+```python
+#part of the telegram bot code for selecting the required company
+#analogue of yellow pages
 
-comment - part of the telegram bot code for selecting the required company
-comment - analogue of yellow pages
-
-comment - import necessary library and modules
+#import necessary library and modules
 from db import db, create_or_get_user, update_role
 from utils import (city_keyboard, like_for_company, if_vote, skip_keyboard, 
                    start_keyboard, pagination_keyboard, count_company_keyboard,
@@ -44,32 +47,36 @@ from telegram import ParseMode
 from telegram.ext import ConversationHandler
 from emoji import emojize
 
-comment - function for validation users
+#function for validation users
 def start_if_user(update, context):
 
-    comment - request to a function to create or have a user
-    comment - if the user is not found, then it is created and written to the DB
+    #request to a function to create or have a user
+    #if the user is not found, then it is created and written to the DB
     user = create_or_get_user(db, update.effective_user, update.message.chat.id)
     user_data = 'user'
     update_role(db, user['user_id'], user_data)
 
-    comment - show the user a new message
+    #show the user a new message
     update.message.reply_text(
-        'Отлично, в каком городе Вы ищете компанию? ' + emojize(':office:', use_aliases=True),
+        'Great, in which city are you looking for a company? ' + emojize(':office:', use_aliases=True),
         reply_markup = city_keyboard()
         )
-    return 'service'  
+    return 'service'
+```  
 
-Education
+---
+## Education
 1. Belarusian State University - Economy; commodity science
 2. Learn Python 
 3. Product University 
 
-Experience 
-1. Sales 
-2. Business Analysis
-3. Product Management
+---
+## Experience 
+* Sales 
+* Business Analysis
+* Product Management
 
-Languages
+---
+## Languages
 1. English StreamLine Language School English sertificate Pre-Intermediate
 2. Russian
