@@ -1,4 +1,4 @@
-# rsschool-cv
+# [rsschool-cv](https://rs.school/)
 ---
 # Yauhen Ranko
 ---
@@ -7,14 +7,14 @@
 * 🏠**Adress:** Uruchcha st. Minsk, Belarus
 * ☎️**Phone:** +375 33 385 58 57
 * 📧**Email:** yauhenranko@gmail.com
-* **LinkedIn:** https://www.linkedin.com/in/yauhen-ranko-63a7801a3/
-* **GitHub:** YauhenRanko
 * **Telegram:** YauhenRanko
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/yauhen-ranko-63a7801a3/)
+[![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/YauhenRanko)
 
 ---
 ## Summary
 
-Currently I work as a Financial Services Product Manager. My main goal is to learn how to create modern and user-friendly interfaces and, of course, learn how to do it correctly. I have a good understanding of business requirements and can convey these requirements to the development team. I like to understand problems in detail and solve them.
+Currently I work as a FinTech Product Manager. My main goal is to learn how to create modern and user-friendly interfaces and, of course, learn how to do it correctly. I have a good understanding of business requirements and can convey these requirements to the development team. I like to understand problems in detail and solve them.
 
 ---
 ## Hard Skills:
