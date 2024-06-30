@@ -13,7 +13,6 @@ E-mail: yauhenranko@gmail.com
 Telegram: @YauhenRanko
 [![LinkedIn](https://img.icons8.com/?size=100&id=13930&format=png&color=000000)](https://www.linkedin.com/in/yauhen-ranko-63a7801a3/)
 
-
 ---
 ### Abount Myself:
 I have extensive experience in selling IT products. For a long time he was engaged in business analysis in the development of enterprise systems in the field of document management and accounting. I currently hold the position of head of the fintech department.
@@ -57,11 +56,9 @@ func InputFloat() (float64, error) {
 }
 
 ```
-
 ---
 #### Courses:
 * [Product University](https://productuniversity.ru/)
-
 
 ---
 #### Languages:
@@ -69,5 +66,3 @@ func InputFloat() (float64, error) {
 * English - Intermediate
 * Russian - Native
 * Germany - Basic
-
-
