@@ -11,7 +11,7 @@
 Phone: +375 33 385 58 57
 E-mail: yauhenranko@gmail.com
 Telegram: @YauhenRanko
-LinkedIn
+[![LinkedIn](https://img.icons8.com/?size=100&id=13930&format=png&color=000000)](https://www.linkedin.com/in/yauhen-ranko-63a7801a3/)
 
 
 ---
