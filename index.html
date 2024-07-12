@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 <body>
@@ -12,24 +15,22 @@
             <div class="header">
                 <nav class="header-navigation">
                     <ul>
-                        <li class="nav-unit"><a href="" class="page-ancore">About Me</a></li>
-                        <li class="nav-unit"><a href="" class="page-ancore">Skills</a></li>
-                        <li class="nav-unit"><a href="" class="page-ancore">Experience</a></li>
-                        <li class="nav-unit"><a href="" class="page-ancore">Languages</a></li>
-                        <li class="nav-unit"><a href="" class="page-ancore">Education</a></li>
-                        <li class="nav-unit"><a href="" class="page-ancore">Contacts</a></li>
+                        <li class="nav-unit"><a href="#about" class="page-ancore">About Me</a></li>
+                        <li class="nav-unit"><a href="#skills" class="page-ancore">Skills</a></li>
+                        <li class="nav-unit"><a href="#experience" class="page-ancore">Experience</a></li>
+                        <li class="nav-unit"><a href="#language" class="page-ancore">Languages</a></li>
+                        <li class="nav-unit"><a href="#education" class="page-ancore">Education</a></li>
+                        <li class="nav-unit"><a href="#contacts" class="page-ancore">Contacts</a></li>
                         <a href="" class="page-ancore"></a>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="about-me-section">
+            <section class="about-me-section" id="about" >
                 <h2>Abount Me</h2>
                 <div class="about-block">
                     <div class="contact-buttons">
-                        <button class="contact">First</button>
-                        <button class="contact">Second</button>
                     </div>
                     <div class="about-text">
                         I am in the position of<span class="about-word">product manager</span> in the fintech solutions. I have good <span class="about-word">negotiation</span> skills with both stakeholders and product users. For a long time he worked as a <span class="about-word">business analyst</span> and <span class="about-word">systems analyst</span>. In addition to my hard skills, I have a junior level in programming in <span class="about-word">Golang</span> and <span class="about-word">Python</span>.
@@ -37,60 +38,82 @@
                 </div>
 
             </section>
-            <section class="skills-section">
-                <h2>My Skills</h2>
-                <div class="skils-text">
-                    <ul>
-                        <li class="slills-list">Product management</li>
-                        <li class="slills-list">Sales</li>
-                        <li class="slills-list">Negotiation</li>
-                        <li class="slills-list">Business analysis</li>
-                        <li class="slills-list">System analysis</li>
-                        <li class="slills-list">Golang</li>
-                        <li class="slills-list">Python</li>
-                    </ul>
+            <section class="skills-section" id="skills">
+                <div class="skills-content">
+                    <h2>My Skills</h2>
+                    <div class="skills-text">
+                        <div class="skill">Product management</div>
+                        <div class="skill">Sales</div>
+                        <div class="skill">Negotiation</div>
+                        <div class="skill">Business analysis</div>
+                        <div class="skill">System analysis</div>
+                        <div class="skill">Golang</div>
+                        <div class="skill">Python</div>
+                    </div>
                 </div>
             </section>
-            <section class="experience-section">
+
+
+            <section class="experience-section" id="experience">
                 <h2>Experience</h2>
-                <div class="expirience-text">
-                    <ul>
-                        <li class="experience-list">
-                            <h3>Ediweb</h3>
-                            <a href="" class="company-site">Site</a>
-                            <div class="position">Position</div>
-                            <div class="position-date">2000-2000</div>
+                <div class="position-card">
+                    <div class="main-information">
+                        <h3>Ediweb</h3>
+                        <a href="" class="company-site">Site</a>
+                        <div class="position">Position</div>
+                        <div class="position-date">2000-2000</div>
+                    </div>
+                    <div class="main-tasks">
+                        <h3>Tasks</h3>
+                        <div class="tasks-block">
                             <ul>
                                 <li class="position-tasks">One</li>
                                 <li class="position-tasks">Two</li>
                                 <li class="position-tasks">Three</li>
                             </ul>
-                        </li>
-                        <li class="experience-list">
-                            <h3>Ediweb</h3>
-                            <a href="" class="company-site">Site</a>
-                            <div class="position">Position</div>
-                            <div class="position-date">2000-2000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-card">
+                    <div class="main-information">
+                        <h3>Ediweb</h3>
+                        <a href="" class="company-site">Site</a>
+                        <div class="position">Position</div>
+                        <div class="position-date">2000-2000</div>
+                    </div>
+                    <div class="main-tasks">
+                        <h3>Tasks</h3>
+                        <div class="tasks-block">
                             <ul>
                                 <li class="position-tasks">One</li>
                                 <li class="position-tasks">Two</li>
                                 <li class="position-tasks">Three</li>
                             </ul>
-                        </li>
-                        <li class="experience-list">
-                            <h3>Ediweb</h3>
-                            <a href="" class="company-site">Site</a>
-                            <div class="position">Position</div>
-                            <div class="position-date">2000-2000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-card">
+                    <div class="main-information">
+                        <h3>Ediweb</h3>
+                        <a href="" class="company-site">Site</a>
+                        <div class="position">Position</div>
+                        <div class="position-date">2000-2000</div>
+                    </div>
+                    <div class="main-tasks">
+                        <h3>Tasks</h3>
+                        <div class="tasks-block">
                             <ul>
                                 <li class="position-tasks">One</li>
                                 <li class="position-tasks">Two</li>
                                 <li class="position-tasks">Three</li>
                             </ul>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="languages-section">
+
+
+            <section class="languages-section" id="language">
                 <h2>Languages</h2>
                 <div class="languages-text">
                     <ul>
@@ -106,27 +129,26 @@
                     </ul>
                 </div>
             </section>
-            <section class="education-section">
+            <section class="education-section" id="education">
                 <h2>Education</h2>
                 <div class="education-text">
-                    <ul>
-                        <li class="education-list">
-                            <h3 class="name-school">Product University</h3>
-                            <div class="date">2022</div>
-                            <div class="school-description">Some</div>
-                        </li>
-                        <li class="education-list">
-                            <h3 class="name-school">Product University</h3>
-                            <div class="date">2022</div>
-                            <div class="school-description">Some</div>
-                        </li>
-                    </ul>
+
+                    <div class="education-card">
+                        <h3 class="name-school">Product University</h3>
+                        <div class="date">2022</div>
+                        <div class="school-description">Some</div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <section class="contact-section">
+            <section class="contact-section" id="contacts">
                 <h2>Contact</h2>
+                <div class="contacts">
+                    <div class="git">
+                        <a href="https://github.com/YauhenRanko"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="github"></a>
+                    </div>
+                </div>
             </section>
         </footer>
     </div>
