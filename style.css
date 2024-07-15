@@ -52,7 +52,11 @@ nav ul {
 
 .skills-content{
     padding: 5px;
+    margin-top: 10px;
+    background-color: var(--brown);
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .skills-text{
@@ -62,7 +66,8 @@ nav ul {
 }
 
 .skill{
-    width: 33%;
+    width: 30%;
+    padding: 10px;
 }
 
 .position-card{
@@ -82,4 +87,53 @@ nav ul {
 }
 .main-tasks{
     width: 70%;
+}
+
+.languages-text{
+    background-color: var(--brown);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.language-card{
+    margin: 0;
+    padding: 10px;
+    width: 30%;
+}
+
+.language-card h3{
+    color: var(--blue);
+}
+
+.education-text{
+    padding-bottom: 10px;
+    background-color: var(--brown);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.education-card{
+    padding: 10px;
+    width: 50%;
+}
+
+.education-card h3{
+    color: var(--blue);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.contact-image{
+    padding: 10px;
+    width: 60%;
+}
+
+.contact-image img{
+    width: 50px;
+    height: 50px;
 }
