@@ -1,0 +1,162 @@
+:root{
+    --brown: #F3EDE5;
+    --blue: #0C5EE4;
+    --vanila: #FDFCFA;
+    --black: #212935; 
+
+
+}
+
+
+*{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+body{
+    width: 1440px;
+    background-color: var(--vanila);
+}
+
+h2{
+    margin: 0;
+    padding-left: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+   
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+   
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+   
+  nav a:hover {
+    color: var(--blue);
+}
+
+.about-me-section{
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: var(--brown);
+    margin-top: 20px;
+}
+
+.about-block{
+    padding: 10px;
+}
+
+.about-block h2{
+    padding: 10px;
+}
+
+.skills-section{
+    border: 0.5px solid var(--black);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.skills-content{
+
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: 30%;
+    padding: 10px;
+}
+
+.experience-section{
+    border: 0.5px solid var(--black);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.position-card{
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-information{
+    width: 30%;
+    padding-left: 10px;
+}
+.main-tasks{
+    width: 70%;
+}
+
+.languages-section{
+    border: 0.5px solid var(--black);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.languages-text{
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.language-card{
+    margin: 0;
+    padding: 10px;
+    width: 30%;
+}
+
+.education-section{
+        border: 0.5px solid var(--black);
+        border-radius: 10px;
+        margin-top: 20px;
+}
+
+.education-text{
+    padding-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.education-card{
+    padding: 10px;
+    width: 50%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.contact-image{
+    padding: 10px;
+    width: 60%;
+}
+
+.contact-image img{
+    width: 50px;
+    height: 50px;
+}
