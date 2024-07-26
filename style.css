@@ -171,3 +171,64 @@ main{
     margin-top: 30px;
     text-align: center;
 }
+
+
+.donation{
+    height: 462px;
+    background-color: #F6F6F6;
+}
+
+.donation-block{
+    display: flex;
+    flex-direction: row;
+    width: 915px;
+    height: 282px;
+    margin: 80px 182px 100px;
+    gap: 30px;
+}
+
+.d-credit-card-block{
+    background-color: #F1CDB3;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    width: 349px;
+    height:43px;
+    gap: 10px;
+    border-radius: 9px;
+    margin: 0px 0px 20px;
+}
+
+.d-card-image{
+    width: 30px;
+    height: 23px;
+    top: 10px;
+    left: 15px;
+}
+
+.d-main-text{
+    margin-bottom: 30px;
+}
+
+.d-bank-name{
+    margin-bottom: 20px;
+}
+
+
+footer{
+    height: 350px;
+    background: linear-gradient(0deg, #211F20, #211F20);
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: row;
+    gap: 160px
+}
+
+.footer-card-content{
+    display: flex;
+    flex-direction: row;
+    align-content:flex-start;
+}
