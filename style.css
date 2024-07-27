@@ -5,7 +5,7 @@
 }
 
 *{
-    margin: auto;
+    margin: 0 auto;
 }
 
 body {
@@ -13,13 +13,32 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     width: 1280px;
-
-  }
+}
 
 .main-section{
     height: 980px;
     background: linear-gradient(0deg, #5B483A, #211F20);
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+}
+
+.logo-name{
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #F1CDB3;
+}
+
+.logo-text{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14.95px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #F1CDB3;
 }
 
 .nav-list ul {
@@ -32,21 +51,36 @@ body {
     display: inline-block;
     margin-right: 20px;
   }
+
+.nav-list{
+    margin: 0;
+}
+   
    
 .nav-list a {
     text-decoration: none;
-    color: #333;
-  }
-   
+    color: #CDCDCD;
+}
+
 .nav-list a:hover {
-    color: var(--blue);
+    color: blue;
 }
 
 nav{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
     height: 60px;
-    width: 1200px;
+    width: 100%;
+    margin: 0; 
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
 }
 
 .navigation{
@@ -59,8 +93,21 @@ main{
     margin-top: 90px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
+    box-sizing: border-box; 
+}
+
+.main-text{
+    width: 460px;
+    height: 322px;
+}
+
+.main-image {
+    display: flex;
+    align-items: flex-end; 
 }
 
 .main-image img{
@@ -71,6 +118,40 @@ main{
 .m-big-text, .m-text{
     margin-bottom: 42px;
 }
+
+.m-big-text{
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.m-text{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.m-button{
+    width: 207px;
+    height: 52px;
+    top: 270px;
+    padding: 15px 45px 15px 45px;
+    gap: 10px;
+    border-radius: 100px;
+    background-color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    color: #292929;
+    border: 2px;
+}
+
 
 .about-block{
     display: flex;
@@ -89,22 +170,50 @@ main{
     margin-bottom: 42px;
 }
 
+.a-big-text{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #4C4C4C;
+}
+
+.a-text{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #4C4C4C;
+}
+
 .friends{
     background-color: #F6F6F6;
     height: 877px;
 }
 
 .f-big-text-block{
-    width: 400px;
-    height: 90px;
-    margin: 80px 440px 60px;
-    text-align: center; 
+    padding: 80px 440px 60px;
+    margin: 0;
+    text-align: center;;
+}
+
+.f-big-text{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+
 }
 
 .friends-block{
     display: flex;
     flex-direction: row;
-    margin: 60px 40px 60px;
+    margin: 0px 40px 60px;
 }
 
 .f-card{
@@ -118,11 +227,32 @@ main{
 .f-name{
     text-align: center; 
     margin-bottom: 30px;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
 }
 
 .f-button{
     margin: 0 auto;
     display: block;
+    width: 187px;
+    height: 52px;
+    background-color: #FAFAFA;
+    gap: 10px;
+    border-radius: 100px;
+    border: 2px solid;
+    border-color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
 }
 
 .f-footer-button{
@@ -132,6 +262,18 @@ main{
 .f-f-button{
     margin: 0 auto;
     display: block;
+        width: 261px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    background-color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #292929;
 }
 
 .help{
@@ -141,6 +283,17 @@ main{
 .h-big-text-block{
     margin-top: 80px;
     text-align: center;
+}
+
+.h-big-text{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
 }
 
 .h-block{
@@ -170,6 +323,12 @@ main{
 .h-card-text{
     margin-top: 30px;
     text-align: center;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
 }
 
 
@@ -183,7 +342,8 @@ main{
     flex-direction: row;
     width: 915px;
     height: 282px;
-    margin: 80px 182px 100px;
+    padding: 80px 182px 100px;
+    margin: 0;
     gap: 30px;
 }
 
@@ -191,12 +351,14 @@ main{
     background-color: #F1CDB3;
     display: flex;
     flex-direction: row;
-    justify-self: start;
+    align-items: center;
+    justify-content: flex-start;
     width: 349px;
     height:43px;
     gap: 10px;
     border-radius: 9px;
-    margin: 0px 0px 20px;
+    margin-bottom: 20px;
+
 }
 
 .d-card-image{
@@ -224,11 +386,21 @@ footer{
 .footer-block{
     display: flex;
     flex-direction: row;
-    gap: 160px
+    gap: 160px;
+    padding: 40px 40px 0px;
 }
 
-.footer-card-content{
+.footer-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-card-content {
     display: flex;
     flex-direction: row;
-    align-content:flex-start;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0; 
+    margin-top: 40px;
 }
