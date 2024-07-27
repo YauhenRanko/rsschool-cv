@@ -16,7 +16,7 @@ body {
 }
 
 .main-section{
-    height: 980px;
+    height: 100%;
     background: linear-gradient(0deg, #5B483A, #211F20);
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
 }
@@ -296,41 +296,42 @@ main{
     color: #545454;
 }
 
-.h-block{
+.h-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 1026px;
-    height: 281px;
     margin-top: 60px;
     gap: 120px;
-    
 }
 
-.h-card{
+.h-card {
     width: 82px;
     height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.h-card-img{
+.h-card-img {
     width: 60px;
     height: 60px;
-    display: block;
-    margin: 0 auto;
 }
 
-.h-card-text{
-    margin-top: 30px;
-    text-align: center;
+.h-card-text {
+    margin-top: 10px;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.06em;
     color: #545454;
+    position: absolute;
+    margin-top: 130px;
 }
-
 
 .donation{
     height: 462px;
@@ -352,7 +353,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: right;
     width: 349px;
     height:43px;
     gap: 10px;
@@ -370,10 +371,44 @@ main{
 
 .d-main-text{
     margin-bottom: 30px;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
 }
 
 .d-bank-name{
     margin-bottom: 20px;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+}
+
+.d-number{
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+}
+
+.legal-information{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #B2B2B2;
 }
 
 
@@ -403,4 +438,24 @@ footer{
     justify-content: flex-start;
     margin-left: 0; 
     margin-top: 40px;
+}
+
+.footer-main-text{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.content-text{
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #F1CDB3;
 }
