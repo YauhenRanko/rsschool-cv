@@ -1,1 +1,0 @@
-https://YauhenRanko.github.io/rsschool-cv/
