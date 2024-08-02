@@ -6,19 +6,19 @@
 
 *{
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
+
 body {
-    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    width: 1280px;
 }
 
 .main-section{
-    height: 100%;
     background: linear-gradient(0deg, #5B483A, #211F20);
-    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
 }
 
 .logo-name{
@@ -113,20 +113,19 @@ nav{
     margin: 0;
 }
 
-.navigation{
+header{
+    width: 1200px;
     padding-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+
 }
 
 .main-block{
+    width: 1200px;
     margin-top: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
     box-sizing: border-box; 
 }
 
@@ -168,11 +167,13 @@ nav{
 }
 
 .m-button{
+    margin: 0;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
     width: 207px;
     height: 52px;
-    top: 270px;
-    padding: 15px 45px 15px 45px;
-    gap: 10px;
     border-radius: 100px;
     background-color: #F1CDB3;
     font-family: Georgia;
@@ -182,13 +183,21 @@ nav{
     border: 2px;
 }
 
+.m-button:hover{
+    background-color: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: all 0.5s;
+}
+
 
 .about-block{
     display: flex;
     flex-direction: row;
     width: 1200px;
     height: 408px;
-    margin: 80px 40px 100px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .about-text{
@@ -242,9 +251,10 @@ nav{
 }
 
 .friends-block{
+    width: 1200px;
     display: flex;
     flex-direction: row;
-    margin: 0px 40px 60px;
+    align-items: center;
 }
 
 .f-card{
@@ -253,7 +263,24 @@ nav{
     height: 435px;
     padding: 0px 0px 30px 0px;
     border-radius: 9px;
+    cursor: pointer;
 }
+
+.f-card:hover{
+    background-color: #FFFFFF;
+}
+
+.f-card:hover{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: all 0.5s;
+}
+
+.f-card:hover .f-button{
+    background-color: #F1CDB3;
+    transition: background-color 0.5s ease;
+}
+
 
 .f-name{
     text-align: center; 
@@ -297,10 +324,10 @@ nav{
 }
 
 .f-f-button{
-    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: block;
-        width: 261px;
-    height: 52px;
+    width:261px;
     border-radius: 100px;
     border: none;
     background-color: #F1CDB3;
@@ -311,6 +338,11 @@ nav{
     letter-spacing: 0.06em;
     text-align: center;
     color: #292929;
+}
+
+.f-f-button:hover{
+    background-color: #FDDCC4;
+    transition: background-color 0.3s ease;
 }
 
 .help{
@@ -380,8 +412,7 @@ nav{
     flex-direction: row;
     width: 915px;
     height: 282px;
-    padding: 80px 182px 100px;
-    margin: 0;
+    padding-top: 80px;
     gap: 30px;
 }
 
@@ -499,9 +530,11 @@ footer{
 
 .pets-friends{
     background-color: #F6F6F6;
+    margin-top: 30px;
 }
 
 .pets-friends-block{
+    width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -518,6 +551,9 @@ footer{
 }
 
 .pagination-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 52px;
     height: 52px;
     background-color: #F6F6F6;
@@ -533,6 +569,9 @@ footer{
 }
 
 .pagination-button-forward{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 52px;
     height: 52px;
     background-color: #F6F6F6;
@@ -547,9 +586,17 @@ footer{
     color: #292929
 }
 
+.pagination-button-forward:hover{
+    background-color: #F1CDB3;
+    transition: background-color 0.3s ease;
+}
+
 .pagination-button-main{
+    display:  flex;
     width: 52px;
     height: 52px;
+    justify-content: center;
+    align-items: center;
     background-color: #F1CDB3;
     border-radius: 100px;
     border: none;
