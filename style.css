@@ -1,3 +1,18 @@
+:root{
+    --header-dark-color: #545454;
+    --header-light-color: #FFFFFF;
+    --paragraph-dark-color: #4C4C4C;
+    --paragraph-light-color: #CDCDCD;
+    --paragraph-italic-color: #B2B2B2;
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-primary-border: #F1CDB3;
+    --color-card-light-s: #FAFAFA;
+    --color-card-light-xl: #FFFFFF;
+    --color-card-light-l:#F6F6F6;
+    --color-button-dark: #292929;
+}
+
 *,
 *::before,
 *::after {
@@ -13,6 +28,45 @@
 body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+}
+
+h2{
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+}
+
+h3{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+}
+
+h4{
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+}
+
+h5{
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+}
+
+p{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 .main-section{
@@ -149,21 +203,11 @@ header{
 }
 
 .m-big-text{
-    font-family: Georgia;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 57.2px;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--header-light-color)
 }
 
 .m-text{
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--paragraph-light-color);
 }
 
 .m-button{
@@ -210,26 +254,15 @@ header{
 }
 
 .a-big-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #4C4C4C;
+    color: var(--header-dark-color);
 }
 
 .a-text{
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #4C4C4C;
+    color: var(--paragraph-dark-color);
 }
 
 .friends{
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     height: 877px;
 }
 
@@ -240,13 +273,7 @@ header{
 }
 
 .f-big-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 
 }
 
@@ -258,7 +285,7 @@ header{
 }
 
 .f-card{
-    background-color: #FAFAFA;
+    background-color: var(--color-card-light-s);
     width: 270px;
     height: 435px;
     padding: 0px 0px 30px 0px;
@@ -267,17 +294,13 @@ header{
 }
 
 .f-card:hover{
-    background-color: #FFFFFF;
-}
-
-.f-card:hover{
-    background-color: #FFFFFF;
+    background-color: var(--color-card-light-xl);
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     transition: all 0.5s;
 }
 
 .f-card:hover .f-button{
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     transition: background-color 0.5s ease;
 }
 
@@ -291,7 +314,7 @@ header{
     line-height: 22.72px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .f-img{
@@ -305,18 +328,18 @@ header{
     display: block;
     width: 187px;
     height: 52px;
-    background-color: #FAFAFA;
+    background-color: var(--color-card-light-s);
     gap: 10px;
     border-radius: 100px;
     border: 2px solid;
-    border-color: #F1CDB3;
+    border-color: var(--color-primary);
     font-family: Georgia;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.1px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .f-footer-button{
@@ -330,18 +353,18 @@ header{
     width:261px;
     border-radius: 100px;
     border: none;
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     font-family: Georgia;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.1px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #292929;
+    color: var(--color-button-dark);
 }
 
 .f-f-button:hover{
-    background-color: #FDDCC4;
+    background-color: var(--color-primary-light);
     transition: background-color 0.3s ease;
 }
 
@@ -355,14 +378,7 @@ header{
 }
 
 .h-big-text{
-    text-align: center;
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .h-block {
@@ -392,19 +408,14 @@ header{
 
 .h-card-text {
     margin-top: 10px;
-    font-family: Georgia;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
+    color: var(--header-dark-color);
     position: absolute;
     margin-top: 130px;
 }
 
 .donation{
     height: 462px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
 }
 
 .donation-block{
@@ -417,7 +428,7 @@ header{
 }
 
 .d-credit-card-block{
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -427,6 +438,7 @@ header{
     gap: 10px;
     border-radius: 9px;
     margin-bottom: 20px;
+    margin-left: 0px;
 
 }
 
@@ -439,24 +451,12 @@ header{
 
 .d-main-text{
     margin-bottom: 30px;
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
+    color: var(--header-dark-color)
 }
 
 .d-bank-name{
     margin-bottom: 20px;
-    font-family: Georgia;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 16.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
+    color: var(--header-dark-color)
 }
 
 .d-number{
@@ -466,7 +466,7 @@ header{
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .legal-information{
@@ -476,7 +476,7 @@ header{
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    color: #B2B2B2;
+    color: var(--paragraph-italic-color);
 }
 
 
@@ -509,13 +509,7 @@ footer{
 }
 
 .footer-main-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--header-light-color);
 }
 
 .content-text{
@@ -525,11 +519,11 @@ footer{
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #F1CDB3;
+    color: var(--color-primary);
 }
 
 .pets-friends{
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     margin-top: 30px;
 }
 
@@ -556,16 +550,16 @@ footer{
     align-items: center;
     width: 52px;
     height: 52px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     border-radius: 100px;
-    border: 2px solid #CDCDCD;
+    border: 2px solid var(--paragraph-light-color);
     margin: 0;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #CDCDCD
+    color: var(--paragraph-light-color)
 }
 
 .pagination-button-forward{
@@ -574,20 +568,20 @@ footer{
     align-items: center;
     width: 52px;
     height: 52px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     border-radius: 100px;
-    border: 2px solid #F1CDB3;    ;
+    border: 2px solid var(--color-primary);    ;
     margin: 0;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #292929
+    color: var(--color-button-dark)
 }
 
 .pagination-button-forward:hover{
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     transition: background-color 0.3s ease;
 }
 
@@ -597,7 +591,7 @@ footer{
     height: 52px;
     justify-content: center;
     align-items: center;
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     border-radius: 100px;
     border: none;
     margin: 0;
@@ -606,7 +600,7 @@ footer{
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #292929
+    color: var(--color-button-dark)
 }
 
 .pets-logo-name{
@@ -616,7 +610,7 @@ footer{
     line-height: 35.2px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .pets-logo-text{
@@ -626,12 +620,12 @@ footer{
     line-height: 14.95px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #292929;
+    color: var(--color-button-dark);
 }
 
 .pets-link {
     text-decoration: none;
-    color: #545454;
+    color: var(--header-dark-color);
     font-family: Arial;
     font-size: 15px;
     font-weight: 400;
@@ -645,7 +639,7 @@ footer{
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: #F1CDB3;
+	background-color: var(--color-primary);
 	content: "";
 	transition: width 0.3s ease-out;
 }
@@ -662,5 +656,3 @@ footer{
 .navigation{
     height: 120px;
 }
-
-
