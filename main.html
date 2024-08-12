@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/favicon-32x32.png" type="image/x-icon">
 </head>
+
+<script src="/index.js"></script>
+
 <body>
+
     <main class="main-section">
         
         <header>
@@ -17,7 +21,13 @@
                     <a href="#"><p class="logo-text">Shelter for pets in Boston</p></a>    
                 </div>
                 <div class="nav-list">
-                    <ul>
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </label>
+                    <ul class="navigation-ul">
                         <li><a href="#about-anchor" class="main-link">About the shelter</a></li>
                         <li><a href="pets.html" class="main-link">Our pets</a></li>
                         <li><a href="#help-anchor" class="main-link">Help the shelter</a></li>
@@ -64,23 +74,25 @@
 
 
         <div class="friends-block">
-            <a href="#"  class="pagination-button-forward"><img src="icons/arrow-left.svg" alt=""></a>
-            <div class="f-card">
-                <img src="img/f-cat.png" alt="cat" class="f-img">
-                <p class="f-name">Katrine</p>
-                <button class="f-button">Learn more</button>
+            <a href="#"  class="pagination-button-forward arrow-left"><img src="icons/arrow-left.svg" alt=""></a>
+            <div class="friends-card-block">
+                <div class="f-card">
+                    <img src="img/f-cat.png" alt="cat" class="f-img">
+                    <p class="f-name">Katrine</p>
+                    <button class="f-button">Learn more</button>
+                </div>
+                <div class="f-card">
+                    <img src="img/f-puppy.png" alt="puppy" class="f-img">
+                    <p class="f-name">Jennifer</p>
+                    <button class="f-button">Learn more</button>
+                </div>
+                <div class="f-card dog-three">
+                    <img src="img/f-dog.png" alt="dog" class="f-img">
+                    <p class="f-name">Woody</p>
+                    <button class="f-button">Learn more</button>
+                </div>
             </div>
-            <div class="f-card">
-                <img src="img/f-puppy.png" alt="puppy" class="f-img">
-                <p class="f-name">Jennifer</p>
-                <button class="f-button">Learn more</button>
-            </div>
-            <div class="f-card">
-                <img src="img/f-dog.png" alt="dog" class="f-img">
-                <p class="f-name">Woody</p>
-                <button class="f-button">Learn more</button>
-            </div>
-            <a href="#" class="pagination-button-forward"><img src="icons/arrow-right.svg" alt=""></a>
+            <a href="#" class="pagination-button-forward arrow-right"><img src="icons/arrow-right.svg" alt=""></a>
         </div>
 
         <div class="f-footer-button">
