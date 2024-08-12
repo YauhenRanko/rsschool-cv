@@ -1,3 +1,18 @@
+:root{
+    --header-dark-color: #545454;
+    --header-light-color: #FFFFFF;
+    --paragraph-dark-color: #4C4C4C;
+    --paragraph-light-color: #CDCDCD;
+    --paragraph-italic-color: #B2B2B2;
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-primary-border: #F1CDB3;
+    --color-card-light-s: #FAFAFA;
+    --color-card-light-xl: #FFFFFF;
+    --color-card-light-l:#F6F6F6;
+    --color-button-dark: #292929;
+}
+
 *,
 *::before,
 *::after {
@@ -6,19 +21,57 @@
 
 *{
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    width: 1280px;
+}
+
+h2{
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+}
+
+h3{
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+}
+
+h4{
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+}
+
+h5{
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+}
+
+p{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 .main-section{
-    height: 100%;
     background: linear-gradient(0deg, #5B483A, #211F20);
-    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
 }
 
 .logo-name{
@@ -103,7 +156,8 @@ nav{
     align-items: center; 
     height: 60px;
     width: 100%;
-    margin: 0; 
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .logo-title {
@@ -113,20 +167,37 @@ nav{
     margin: 0;
 }
 
-.navigation{
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+header{
+    width: 100%;
     padding-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+
 }
 
 .main-block{
+    width: 100%;
+    max-width: 1200px;
     margin-top: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
     box-sizing: border-box; 
 }
 
@@ -150,29 +221,21 @@ nav{
 }
 
 .m-big-text{
-    font-family: Georgia;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 57.2px;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--header-light-color)
 }
 
 .m-text{
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--paragraph-light-color);
 }
 
 .m-button{
+    margin: 0;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
     width: 207px;
     height: 52px;
-    top: 270px;
-    padding: 15px 45px 15px 45px;
-    gap: 10px;
     border-radius: 100px;
     background-color: #F1CDB3;
     font-family: Georgia;
@@ -182,13 +245,21 @@ nav{
     border: 2px;
 }
 
+.m-button:hover{
+    background-color: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: all 0.5s;
+}
+
 
 .about-block{
     display: flex;
     flex-direction: row;
     width: 1200px;
     height: 408px;
-    margin: 80px 40px 100px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .about-text{
@@ -201,26 +272,15 @@ nav{
 }
 
 .a-big-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #4C4C4C;
+    color: var(--header-dark-color);
 }
 
 .a-text{
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #4C4C4C;
+    color: var(--paragraph-dark-color);
 }
 
 .friends{
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     height: 877px;
 }
 
@@ -231,29 +291,43 @@ nav{
 }
 
 .f-big-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 
 }
 
 .friends-block{
+    width: 1200px;
     display: flex;
     flex-direction: row;
-    margin: 0px 40px 60px;
+    align-items: center;
+}
+
+.friends-card-block{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
 }
 
 .f-card{
-    background-color: #FAFAFA;
+    background-color: var(--color-card-light-s);
     width: 270px;
     height: 435px;
     padding: 0px 0px 30px 0px;
     border-radius: 9px;
+    cursor: pointer;
 }
+
+.f-card:hover{
+    background-color: var(--color-card-light-xl);
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: all 0.5s;
+}
+
+.f-card:hover .f-button{
+    background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
+}
+
 
 .f-name{
     text-align: center; 
@@ -264,7 +338,7 @@ nav{
     line-height: 22.72px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .f-img{
@@ -278,18 +352,18 @@ nav{
     display: block;
     width: 187px;
     height: 52px;
-    background-color: #FAFAFA;
+    background-color: var(--color-card-light-s);
     gap: 10px;
     border-radius: 100px;
     border: 2px solid;
-    border-color: #F1CDB3;
+    border-color: var(--color-primary);
     font-family: Georgia;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.1px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .f-footer-button{
@@ -297,20 +371,25 @@ nav{
 }
 
 .f-f-button{
-    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: block;
-        width: 261px;
-    height: 52px;
+    width:261px;
     border-radius: 100px;
     border: none;
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     font-family: Georgia;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.1px;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #292929;
+    color: var(--color-button-dark);
+}
+
+.f-f-button:hover{
+    background-color: var(--color-primary-light);
+    transition: background-color 0.3s ease;
 }
 
 .help{
@@ -323,14 +402,7 @@ nav{
 }
 
 .h-big-text{
-    text-align: center;
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .h-block {
@@ -360,19 +432,14 @@ nav{
 
 .h-card-text {
     margin-top: 10px;
-    font-family: Georgia;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
+    color: var(--header-dark-color);
     position: absolute;
     margin-top: 130px;
 }
 
 .donation{
     height: 462px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
 }
 
 .donation-block{
@@ -380,13 +447,12 @@ nav{
     flex-direction: row;
     width: 915px;
     height: 282px;
-    padding: 80px 182px 100px;
-    margin: 0;
+    padding-top: 80px;
     gap: 30px;
 }
 
 .d-credit-card-block{
-    background-color: #F1CDB3;
+    background-color: var(--color-primary);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -396,6 +462,7 @@ nav{
     gap: 10px;
     border-radius: 9px;
     margin-bottom: 20px;
+    margin-left: 0px;
 
 }
 
@@ -408,24 +475,12 @@ nav{
 
 .d-main-text{
     margin-bottom: 30px;
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
+    color: var(--header-dark-color)
 }
 
 .d-bank-name{
     margin-bottom: 20px;
-    font-family: Georgia;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 16.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #545454;
+    color: var(--header-dark-color)
 }
 
 .d-number{
@@ -435,7 +490,7 @@ nav{
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .legal-information{
@@ -445,7 +500,7 @@ nav{
     font-weight: 400;
     line-height: 18px;
     text-align: left;
-    color: #B2B2B2;
+    color: var(--paragraph-italic-color);
 }
 
 
@@ -478,13 +533,7 @@ footer{
 }
 
 .footer-main-text{
-    font-family: Georgia;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 45.5px;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: #FFFFFF;
+    color: var(--header-light-color);
 }
 
 .content-text{
@@ -494,14 +543,16 @@ footer{
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #F1CDB3;
+    color: var(--color-primary);
 }
 
 .pets-friends{
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
+    margin-top: 30px;
 }
 
 .pets-friends-block{
+    width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -518,39 +569,53 @@ footer{
 }
 
 .pagination-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 52px;
     height: 52px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     border-radius: 100px;
-    border: 2px solid #CDCDCD;
+    border: 2px solid var(--paragraph-light-color);
     margin: 0;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #CDCDCD
+    color: var(--paragraph-light-color)
 }
 
 .pagination-button-forward{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 52px;
     height: 52px;
-    background-color: #F6F6F6;
+    background-color: var(--color-card-light-l);
     border-radius: 100px;
-    border: 2px solid #F1CDB3;    ;
+    border: 2px solid var(--color-primary);    ;
     margin: 0;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #292929
+    color: var(--color-button-dark)
+}
+
+.pagination-button-forward:hover{
+    background-color: var(--color-primary);
+    transition: background-color 0.3s ease;
 }
 
 .pagination-button-main{
+    display:  flex;
     width: 52px;
     height: 52px;
-    background-color: #F1CDB3;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
     border-radius: 100px;
     border: none;
     margin: 0;
@@ -559,7 +624,7 @@ footer{
     font-weight: 400;
     line-height: 23px;
     text-align: center;
-    color: #292929
+    color: var(--color-button-dark)
 }
 
 .pets-logo-name{
@@ -569,7 +634,7 @@ footer{
     line-height: 35.2px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #545454;
+    color: var(--header-dark-color);
 }
 
 .pets-logo-text{
@@ -579,12 +644,12 @@ footer{
     line-height: 14.95px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #292929;
+    color: var(--color-button-dark);
 }
 
 .pets-link {
     text-decoration: none;
-    color: #545454;
+    color: var(--header-dark-color);
     font-family: Arial;
     font-size: 15px;
     font-weight: 400;
@@ -598,7 +663,7 @@ footer{
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: #F1CDB3;
+	background-color: var(--color-primary);
 	content: "";
 	transition: width 0.3s ease-out;
 }
@@ -617,3 +682,313 @@ footer{
 }
 
 
+@media  (max-width: 1280px) {
+    *{
+        margin: 0 auto;
+    }
+
+
+    .main-block{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box; 
+        padding-left: 154px;
+        padding-right: 154px;
+    }
+
+    nav{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main-text{
+        width: 100%;
+        height: 100%;
+        white-space: wrap;
+    }
+
+    .main-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .m-button{
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    
+    .about-block{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-pictures img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text{
+        height: auto;
+    }
+
+    .a-text{
+        display: inline-block;
+    }
+
+    .f-big-text{
+        padding-top: 80px;
+    }
+
+    .f-big-text-block{
+        padding: 0px;
+    }
+
+    .friends-block{
+        margin-top: 60px;
+        margin-right: 30px;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    .friends-card-block{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        width: 608px;
+        height: 435px;
+        flex-direction: row;
+        gap: 40px;
+
+    }
+
+    .dog-three{
+        overflow: hidden;
+    }
+
+    .f-footer-button {
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .help{
+        width: 100%;
+        height: auto;
+    }
+
+    .h-block{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        gap: 60px;
+        margin-bottom: 120px;
+        margin-left: 69px;
+        margin-right: 69px;
+    }
+
+    .h-card{
+        width: 170px;
+        height: 113px;
+    }
+
+    .donation{
+        height: auto;
+    }
+
+    .donation-block{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 0px;
+        padding-bottom: 100px;
+    }
+
+    .donation-information{
+        margin-left: 194px;
+        margin-right: 194px;
+        margin-top: 80px;
+    }
+
+    .d-img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer{
+        height: 669px;
+    }
+
+    .footer-block{
+        padding: 0px;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        gap: 60px;
+    }
+
+    .footer-card{
+        width: 278px;
+        height: 234px;
+        margin-top: 30px;
+    }
+
+    .footer-dog-img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .legal-information {
+        width: auto;
+        white-space: wrap; 
+       }
+    
+}
+
+@media  (max-width: 768px) {
+    *{
+        margin: 0 auto;
+    }
+
+    h3{
+        font-family: Georgia;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .main-block{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box; 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navigation-ul{
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+    
+    .menu-toggle:checked + .burger + .nav-list {
+        display: flex;
+    }
+
+
+    .m-button{
+        margin-bottom: 105px;
+    }
+
+    .about-block{
+        margin-top: 42px;
+        margin-bottom: 42px;
+    }
+
+    .about-text {
+        height: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .friends-block{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .friends {
+        height: auto;
+    }
+
+    .f-big-text{
+        padding-top: 42px;
+    }
+
+    .f-footer-button {
+        margin: 0 auto;
+        padding: 42px 30px;
+    }
+
+    .arrow-left{
+        order: 2;
+    }
+
+    .arrow-right{
+        order: 3;
+    }
+
+    .pagination-button-forward{
+        margin-top: 20px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .h-big-text-block{
+        margin-top: 42px;
+    }
+
+    .h-card{
+        width: 130px;
+        height: 87px;
+    }
+
+    .h-block {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        gap: 30px;
+        margin-top: 0px;
+        margin-bottom: 42px;
+        padding-top: 42px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 42px;
+    }
+
+    .donation-block{
+        padding-bottom: 42px;
+    }
+
+    .donation-information {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 42px;
+    }
+
+    .d-credit-card-block {
+        width: auto;
+    }
+
+    .d-number{
+        font-family: Georgia;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16.5px;
+        letter-spacing: 0.06em;
+        text-align: left;
+    }
+
+    .d-img{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+}
