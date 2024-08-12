@@ -167,6 +167,23 @@ nav{
     margin: 0;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.menu-toggle {
+    display: none;
+}
+
 header{
     width: 100%;
     padding-top: 30px;
@@ -855,6 +872,18 @@ footer{
         box-sizing: border-box; 
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .navigation-ul{
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+    
+    .menu-toggle:checked + .burger + .nav-list {
+        display: flex;
     }
 
 
